@@ -1,7 +1,14 @@
 #!/usr/bin/python3
 
-def hello_world():
-  print('hello_world')
+import sys
+
+if len(sys.argv) == 1:
+    name = sys.argv[1]
+else:
+    name = 'World'
+
+def hello_world(name):
+  print("Hello" + name)
 
 hello_world()
-print('new commit')
+
