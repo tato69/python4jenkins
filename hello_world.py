@@ -2,13 +2,14 @@
 
 import sys
 
-if len(sys.argv) == 1:
-    name = sys.argv[1]
-else:
-    name = 'World'
 
 def hello_world(name):
-  print("Hello" + name)
+  print("Hello " + name)
 
-hello_world()
+argname = 'World'
+
+if len(sys.argv) > 1:
+    argname = sys.argv[1]
+
+hello_world(argname)
 
