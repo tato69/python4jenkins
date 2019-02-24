@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 
-print('Hello World')
-print('Hello Jenkins')
+def hello_world():
+  print('hello_world')
+
+hello_world()
